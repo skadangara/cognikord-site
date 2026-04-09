@@ -52,7 +52,7 @@ const Product = () => {
           <div className="rounded-2xl border border-border overflow-hidden glow-secondary">
             <div className="bg-muted/50 flex items-center gap-2 px-4 py-2.5 border-b border-border">
               <span className="h-3 w-3 rounded-full bg-destructive/60" />
-              <span className="h-3 w-3 rounded-full bg-yellow-500/60" />
+              <span className="h-3 w-3 rounded-full bg-accent/60" />
               <span className="h-3 w-3 rounded-full bg-primary/60" />
               <span className="text-xs text-muted-foreground ml-2">CogniKord AI — Orchestration Dashboard</span>
             </div>
