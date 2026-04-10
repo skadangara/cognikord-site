@@ -41,8 +41,8 @@ const SolutionSection = () => {
                 { metric: "100s hrs", label: "Reduction of hundreds of hours in manual document processing and verification efforts across enterprise workflows" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <span className="text-sm font-bold text-primary">{item.metric}</span>
+                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 text-center">
+                    <span className="text-xs font-bold text-primary leading-tight">{item.metric}</span>
                   </div>
                   <span className="text-muted-foreground">{item.label}</span>
                 </div>
