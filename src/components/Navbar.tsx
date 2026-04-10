@@ -11,9 +11,7 @@ const Navbar = () => {
           <span className="text-xl font-bold text-foreground">CogniKord AI</span>
         </Link>
         <div className="hidden md:flex items-center gap-6">
-          <a href="/#problem" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Problem</a>
-          <a href="/#solution" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Solution</a>
-          <a href="/#how-it-works" className="text-sm text-muted-foreground hover:text-foreground transition-colors">How It Works</a>
+          <Link to="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Home</Link>
           <Link to="/product" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Product</Link>
           <Link to="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Use Cases</Link>
           <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About Us</Link>
