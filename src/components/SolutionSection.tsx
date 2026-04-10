@@ -34,7 +34,7 @@ const SolutionSection = () => {
             <h3 className="text-xl font-bold text-foreground mb-6">Key Value & ROI</h3>
             <div className="space-y-5">
               {[
-                { metric: "30–50%", label: "Reduction in exception resolution time" },
+                { metric: "30 – 50%", label: "Reduction in exception resolution time" },
                 { metric: "↓", label: "Minimize manual coordination across teams" },
                 { metric: "↑", label: "Improve auditability and operational visibility" },
                 { metric: "Auto", label: "Automate mismatch detection between PO, invoices & shipments" },
