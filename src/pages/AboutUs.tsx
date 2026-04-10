@@ -1,12 +1,32 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import CogniKordLogo from "@/components/CogniKordLogo";
 import { Target, Eye, Lightbulb, Users, XCircle, CheckCircle } from "lucide-react";
 
 const notList = [
   "Not an ERP replacement",
   "Not RPA",
   "Not a chatbot",
+];
+
+const team = [
+  {
+    initials: "SK",
+    name: "Sajana Kadangara",
+    role: "Founder & CEO",
+    bio: "13+ years in IT with deep expertise in multi-agent AI orchestration, having driven 40–60% efficiency gains across supply chain and enterprise AI at companies like Carbmee and Verizon.",
+  },
+  {
+    initials: "BP",
+    name: "Bineesh Panangat",
+    role: "Co-Founder & CTO",
+    bio: "13+ years in IT and 8+ in AI/ML, specialising in production multi-agent systems and LLM-powered platforms — scaled a startup product through a successful Fortune 500 acquisition.",
+  },
+  {
+    initials: "VD",
+    name: "Vibhuti Dhimar",
+    role: "Founding Product & Research Associate",
+    bio: "UK-based market research specialist leading customer discovery and competitive intelligence, with a proven pipeline of enterprise pilot prospects across the Midlands and London.",
+  },
 ];
 
 const AboutUs = () => {
@@ -20,8 +40,7 @@ const AboutUs = () => {
           <div className="absolute top-1/3 right-1/3 w-96 h-96 rounded-full bg-primary/5 blur-3xl animate-pulse-glow" />
         </div>
         <div className="container relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <CogniKordLogo size={64} />
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground mt-6 mb-4">About Us</h1>
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-foreground mb-4">About Us</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Building the next generation of enterprise execution infrastructure.
           </p>
@@ -69,14 +88,28 @@ const AboutUs = () => {
 
       {/* Founding Team */}
       <section className="py-20 bg-background">
-        <div className="container max-w-4xl mx-auto px-4 text-center">
-          <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
-            <Users className="h-6 w-6 text-primary" />
+        <div className="container max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 mx-auto">
+              <Users className="h-6 w-6 text-primary" />
+            </div>
+            <h2 className="text-3xl font-bold text-foreground mb-4">Founding Team</h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Founded by AI engineers with deep experience in Generative AI, multi-agent systems, and enterprise workflow automation.
+            </p>
           </div>
-          <h2 className="text-3xl font-bold text-foreground mb-4">Founding Team</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Founded by AI engineers with deep experience in Generative AI, multi-agent systems, and enterprise workflow automation.
-          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {team.map((member) => (
+              <div key={member.initials} className="bg-card-gradient rounded-2xl border border-border p-6 text-center glow-primary">
+                <div className="h-16 w-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <span className="text-lg font-bold text-primary">{member.initials}</span>
+                </div>
+                <h3 className="text-lg font-bold text-foreground mb-1">{member.name}</h3>
+                <p className="text-sm text-primary font-medium mb-3">{member.role}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
