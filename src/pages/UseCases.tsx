@@ -19,6 +19,7 @@ const useCases = [
     title: "Procurement Operations",
     description: "Streamline procurement workflows with intelligent validation and reconciliation across vendor ecosystems.",
     items: [
+      { icon: FileCheck, text: "Vendor Proposal Evaluation & Compliance Verification" },
       { icon: Users, text: "Vendor reconciliation" },
       { icon: CheckCircle, text: "Purchase validation" },
     ],
