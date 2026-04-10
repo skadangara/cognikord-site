@@ -26,7 +26,7 @@ const useCases = [
     accent: "secondary" as const,
   },
   {
-    icon: DollarSign,
+    icon: Landmark,
     title: "Finance Operations",
     description: "Automate financial verification and approval processes with policy-aware orchestration.",
     items: [
