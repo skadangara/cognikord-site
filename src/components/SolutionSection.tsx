@@ -38,6 +38,7 @@ const SolutionSection = () => {
                 { metric: "↓", label: "Minimize manual coordination across teams" },
                 { metric: "↑", label: "Improve auditability and operational visibility" },
                 { metric: "Auto", label: "Automate mismatch detection between PO, invoices & shipments" },
+                { metric: "100s hrs", label: "Reduction of hundreds of hours in manual document processing and verification efforts across enterprise workflows" },
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
