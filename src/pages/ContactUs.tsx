@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, Building2, Send } from "lucide-react";
+import { Mail, Building2, Send, Briefcase, HeadsetIcon } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactUs = () => {
