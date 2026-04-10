@@ -25,10 +25,17 @@ const ContactUs = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+
+    const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`
+    );
+    window.location.href = `mailto:vdhimar@cognikord.com?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
       toast({
-        title: "Demo Request Submitted",
-        description: "We'll get back to you within 24 hours.",
+        title: "Opening your email client",
+        description: "Please send the pre-filled email to complete your submission.",
       });
       setFormData({ name: "", email: "", company: "", message: "" });
       setIsSubmitting(false);
