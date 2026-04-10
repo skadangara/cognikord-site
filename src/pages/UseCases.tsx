@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Package, FileCheck, DollarSign, ArrowRight, AlertTriangle, Clock, BarChart3, Users, CheckCircle, CreditCard } from "lucide-react";
+import { Package, FileCheck, Landmark, ArrowRight, AlertTriangle, Clock, BarChart3, Users, CheckCircle, CreditCard } from "lucide-react";
 
 const useCases = [
   {
@@ -26,7 +26,7 @@ const useCases = [
     accent: "secondary" as const,
   },
   {
-    icon: DollarSign,
+    icon: Landmark,
     title: "Finance Operations",
     description: "Automate financial verification and approval processes with policy-aware orchestration.",
     items: [
