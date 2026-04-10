@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -15,12 +16,16 @@ const CTASection = () => {
           See how CogniKord AI can streamline your supply chain exception management.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button variant="hero" size="lg" className="text-base px-8 py-6">
-            Book a Demo <ArrowRight className="ml-1 h-4 w-4" />
-          </Button>
-          <Button variant="heroOutline" size="lg" className="text-base px-8 py-6">
-            <MessageCircle className="mr-1 h-4 w-4" /> Get in Touch
-          </Button>
+          <Link to="/contact">
+            <Button variant="hero" size="lg" className="text-base px-8 py-6">
+              Book a Demo <ArrowRight className="ml-1 h-4 w-4" />
+            </Button>
+          </Link>
+          <Link to="/contact">
+            <Button variant="heroOutline" size="lg" className="text-base px-8 py-6">
+              <MessageCircle className="mr-1 h-4 w-4" /> Get in Touch
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
