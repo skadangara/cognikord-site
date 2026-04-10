@@ -65,99 +65,49 @@ const ContactUs = () => {
       {/* Form */}
       <section className="pb-24 px-4">
         <div className="container max-w-xl">
+          <div className="rounded-2xl border border-border bg-card p-8 md:p-10 shadow-lg">
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div className="space-y-2">
+                <Label htmlFor="name">Name</Label>
+                <Input id="name" name="name" placeholder="Your full name" value={formData.name} onChange={handleChange} required maxLength={100} />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email">Email</Label>
+                <Input id="email" name="email" type="email" placeholder="you@company.com" value={formData.email} onChange={handleChange} required maxLength={255} />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="company">Company</Label>
+                <div className="relative">
+                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+                  <Input id="company" name="company" placeholder="Your company name" className="pl-10" value={formData.company} onChange={handleChange} required maxLength={200} />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="message">Message</Label>
+                <Textarea id="message" name="message" placeholder="Tell us about your use case or questions..." rows={5} value={formData.message} onChange={handleChange} required maxLength={1000} />
+              </div>
+              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : (<><Send className="h-4 w-4 mr-2" />Request a Demo</>)}
+              </Button>
+            </form>
+          </div>
+
           {/* Direct Contact Cards */}
-          <div className="flex flex-col gap-4 mb-8">
+          <div className="flex flex-col gap-4 mt-10">
             <div className="rounded-xl border border-border bg-card p-5 flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Briefcase className="h-5 w-5 text-primary" />
               </div>
               <p className="text-sm font-semibold text-foreground">Sales Enquiries:</p>
-              <a href="mailto:vdhimar@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">
-                vdhimar@cognikord.com
-              </a>
+              <a href="mailto:vdhimar@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">vdhimar@cognikord.com</a>
             </div>
             <div className="rounded-xl border border-border bg-card p-5 flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <HeadsetIcon className="h-5 w-5 text-primary" />
               </div>
               <p className="text-sm font-semibold text-foreground">Customer Support:</p>
-              <a href="mailto:skadangara@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">
-                skadangara@cognikord.com
-              </a>
+              <a href="mailto:skadangara@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">skadangara@cognikord.com</a>
             </div>
-          </div>
-
-          <div className="rounded-2xl border border-border bg-card p-8 md:p-10 shadow-lg">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder="Your full name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  maxLength={100}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="you@company.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  maxLength={255}
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="company">Company</Label>
-                <div className="relative">
-                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-                  <Input
-                    id="company"
-                    name="company"
-                    placeholder="Your company name"
-                    className="pl-10"
-                    value={formData.company}
-                    onChange={handleChange}
-                    required
-                    maxLength={200}
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  placeholder="Tell us about your use case or questions..."
-                  rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  maxLength={1000}
-                />
-              </div>
-
-              <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? (
-                  "Submitting..."
-                ) : (
-                  <>
-                    <Send className="h-4 w-4 mr-2" />
-                    Request a Demo
-                  </>
-                )}
-              </Button>
-            </form>
           </div>
         </div>
       </section>
