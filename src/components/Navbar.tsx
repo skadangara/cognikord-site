@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link to="/product" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Product</Link>
           <Link to="/use-cases" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Use Cases</Link>
           <Link to="/about" className="text-sm text-muted-foreground hover:text-foreground transition-colors">About Us</Link>
-          <Button variant="hero" size="sm">Request Demo</Button>
+          <Link to="/contact"><Button variant="hero" size="sm">Request Demo</Button></Link>
         </div>
       </div>
     </nav>

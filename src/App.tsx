@@ -8,6 +8,7 @@ import NotFound from "./pages/NotFound.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import Product from "./pages/Product.tsx";
 import UseCases from "./pages/UseCases.tsx";
+import ContactUs from "./pages/ContactUs.tsx";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/about" element={<AboutUs />} />
           <Route path="/product" element={<Product />} />
           <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
