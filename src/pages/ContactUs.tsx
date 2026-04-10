@@ -66,28 +66,24 @@ const ContactUs = () => {
       <section className="pb-24 px-4">
         <div className="container max-w-xl">
           {/* Direct Contact Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-            <div className="rounded-xl border border-border bg-card p-5 flex items-start gap-4">
+          <div className="flex flex-col gap-4 mb-8">
+            <div className="rounded-xl border border-border bg-card p-5 flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <Briefcase className="h-5 w-5 text-primary" />
               </div>
-              <div>
-                <p className="text-sm font-semibold text-foreground mb-1">Sales Enquiries</p>
-                <a href="mailto:vdhimar@cognikord.com" className="text-sm text-primary hover:underline break-all">
-                  vdhimar@cognikord.com
-                </a>
-              </div>
+              <p className="text-sm font-semibold text-foreground">Sales Enquiries:</p>
+              <a href="mailto:vdhimar@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">
+                vdhimar@cognikord.com
+              </a>
             </div>
-            <div className="rounded-xl border border-border bg-card p-5 flex items-start gap-4">
+            <div className="rounded-xl border border-border bg-card p-5 flex items-center gap-4">
               <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <HeadsetIcon className="h-5 w-5 text-primary" />
               </div>
-              <div>
-                <p className="text-sm font-semibold text-foreground mb-1">Customer Support</p>
-                <a href="mailto:skadangara@cognikord.com" className="text-sm text-primary hover:underline break-all">
-                  skadangara@cognikord.com
-                </a>
-              </div>
+              <p className="text-sm font-semibold text-foreground">Customer Support:</p>
+              <a href="mailto:skadangara@cognikord.com" className="text-sm text-primary hover:underline whitespace-nowrap">
+                skadangara@cognikord.com
+              </a>
             </div>
           </div>
 
