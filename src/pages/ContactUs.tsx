@@ -97,7 +97,7 @@ const ContactUs = () => {
             </div>
 
             {/* Contact Info - Right */}
-            <div className="lg:col-span-2 flex flex-col gap-6 lg:pt-2">
+            <div className="lg:col-span-2 flex flex-col gap-6 lg:pt-40">
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
