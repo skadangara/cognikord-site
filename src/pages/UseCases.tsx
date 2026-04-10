@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Package, FileCheck, DollarSign, ArrowRight, AlertTriangle, Clock, BarChart3, Users, CheckCircle, CreditCard } from "lucide-react";
+import { Package, FileCheck, Landmark, ArrowRight, AlertTriangle, Clock, BarChart3, Users, CheckCircle, CreditCard } from "lucide-react";
 
 const useCases = [
   {
